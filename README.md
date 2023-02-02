@@ -11,6 +11,10 @@
 A full TeX distribution is assumed.  [Various distributions for different operating systems (Windows, Mac, \*nix) are available](http://tex.stackexchange.com/q/55437) but TeX Live is recommended.
 You can [install TeX from upstream](http://tex.stackexchange.com/q/1092) (recommended; most up-to-date) or use `sudo apt-get install texlive-full` if you really want that.  (It's generally a few years behind.)
 
+#### Quick Start
+
+* [**Edit on OverLeaf.com**](https://www.overleaf.com/project/63b91737b79e82eed7457750)
+
 #### Usage
 
 At a command prompt, run
