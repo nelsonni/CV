@@ -13,7 +13,7 @@ You can [install TeX from upstream](http://tex.stackexchange.com/q/1092) (recomm
 
 #### Quick Start
 
-* [**Edit on OverLeaf.com**](https://www.overleaf.com/project/63b91737b79e82eed7457750)
+* [**Edit on OverLeaf.com**](https://www.overleaf.com/project/63b91737b79e82eed7457750) (supports LaTeX and BibTeX via [biber](https://www.ctan.org/pkg/biber))
 
 #### Usage
 
@@ -30,9 +30,9 @@ This should result in the creation of ``cv.pdf``
 You can generate list of publication from [**BibTeX**](http://www.bibtex.org/) source files.
 [**BibLaTeX**](https://www.ctan.org/pkg/biblatex) and [**biber**](https://www.ctan.org/pkg/biber) should be available.
 
-To include your publications, add the entries to [`examples/cv/references.bib`](examples/cv/references.bib),
-and cite them in [`examples/cv/publications.tex`](examples/cv/publications.tex).
-Update the sections in [`examples/cv.tex`](examples/cv.tex) to include the publications.
+To include your publications, add the entries to [`cv/references.bib`](cv/references.bib),
+and cite them with `\nocite{*}` in [`cv/publications.tex`](cv/publications.tex).
+Update the sections in [`cv.tex`](cv.tex) to include the publications.
 
 To generate document with the list of publications, at a command prompt, run
 
