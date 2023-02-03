@@ -184,7 +184,7 @@
 \newcommand*{\bodyfontlight}{\sourcesansprolight}
 
 %-------------------------------------------------------------------------------
-%                Configuration for styles
+%                 Configuration for styles
 %-------------------------------------------------------------------------------
 % Configure styles for each CV elements
 % For fundamental structures
@@ -733,7 +733,6 @@
     }
 }
 
-
 %-------------------------------------------------------------------------------
 %                Bibliography
 %-------------------------------------------------------------------------------
@@ -761,8 +760,7 @@
    \widowpenalty10000
    \interlinepenalty5000}
 
-% Customized format, based on the Fancy CV template created by Adrien Friggeri
-% See https://github.com/ashee/cv (MIT license)
+% Customized format, based on Fancy CV template created by Adrien Friggeri
 \DeclareFieldFormat[article]{title}{#1\par}
 \DeclareFieldFormat[inproceedings]{title}{#1\par}
 \DeclareFieldFormat[misc]{title}{#1\par}
@@ -777,7 +775,7 @@
   \par%
   \newblock%
   {%
-    \fontsize{8pt}{1em}\bodyfontlight\color{graytext}%
+    \fontsize{8pt}{1em}\bodyfont\scshape\color{awesome}%
     \usebibmacro{journal+issuetitle}%
     \setunit{\space}%
     \printfield{pages}%
@@ -787,7 +785,7 @@
     \printfield{year}%
     \newunit%
   }
-  \par\vspace{0.3\baselineskip}
+  \par\vspace{0.8\baselineskip}
 }
 
 \DeclareBibliographyDriver{inproceedings}{%
@@ -798,7 +796,7 @@
   \par%
   \newblock%
   {%
-    \fontsize{8pt}{1em}\bodyfontlight\color{graytext}%
+    \fontsize{8pt}{1em}\bodyfont\scshape\color{awesome}%
     \printfield{booktitle}%
     \setunit{\addcomma\space}%
     \printfield{year}%
@@ -870,7 +868,7 @@
 
 % New syntax for flexible backend (BibLaTeX > v3.3)
 \DeclareNameFormat{author}{%
-  \fontsize{9pt}{1em}\bodyfont%
+  \fontsize{9pt}{1em}\bodyfontlight%
   \renewcommand*{\multinamedelim}{\addcomma\addspace}%
   \nameparts{#1}%
   \ifthenelse{\value{listcount}=1}
