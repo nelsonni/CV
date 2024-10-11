@@ -23,9 +23,6 @@
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
 
-% Specify the location of the included fonts
-\fontdir[fonts/]
-
 % Color for highlights
 % Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
 %                 awesome-nephritis, awesome-concrete, awesome-darknight
@@ -39,6 +36,7 @@
 % \definecolor{text}{HTML}{333333}
 % \definecolor{graytext}{HTML}{5D5D5D}
 % \definecolor{lighttext}{HTML}{999999}
+% \definecolor{sectiondivider}{HTML}{5D5D5D}
 
 % Set false if you don't want to highlight section with awesome color
 \setbool{acvSectionColorHighlight}{true}
@@ -52,55 +50,57 @@
 %	Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
-\photo[circle,noedge,left]{./profile}
-\name{Nicholas}{Nelson}
-\position{Software Engineer{\enskip\cdotp\enskip}HCI Researcher}
-\address{Portland, Oregon, United States of AMERICA}
+%\photo[circle,noedge,left]{./examples/profile}
+\name{Claud D.}{Park}
+\position{Site Reliability Engineer{\enskip\cdotp\enskip}Software Architect}
+\address{235, World Cup buk-ro, Mapo-gu, Seoul, 03936, Republic of Korea}
 
-\mobile{(+1) 541-224-6912}
-\email{nelsonni@oregonstate.edu}
-\homepage{https://nomatic.dev}
-\github{nelsonni}
-\linkedin{nelsonni1}
+\mobile{(+82) 10-9030-1843}
+\email{posquit0.bj@gmail.com}
+%\dateofbirth{January 1st, 1970}
+\homepage{www.posquit0.com}
+\github{posquit0}
+\linkedin{posquit0}
 % \gitlab{gitlab-id}
 % \stackoverflow{SO-id}{SO-name}
-% \twitter{@nomaticdev}
+% \twitter{@twit}
 % \skype{skype-id}
 % \reddit{reddit-id}
 % \medium{madium-id}
+% \kaggle{kaggle-id}
+% \hackerrank{hackerrank-id}
 % \googlescholar{googlescholar-id}{name-to-display}
 %% \firstname and \lastname will be used
-% \googlescholar{z7e_YQoAAAAJ&hl  }{}
-% \extrainfo{extra informations}
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra information}
 
-% \quote{``Be the change that you want to see in the world."}
+\quote{``Be the change that you want to see in the world."}
 
 
 %-------------------------------------------------------------------------------
 %	LETTER INFORMATION
 %	All of the below lines must be filled out
 %-------------------------------------------------------------------------------
-\newcommand{\company}{Beyond Finance}
 % The company being applied to
 \recipient
-  {Recruitment Team}
-  {\company\\Chicago, IL}
+  {Company Recruitment Team}
+  {Google Inc.\\1600 Amphitheatre Parkway\\Mountain View, CA 94043}
 % The date on the letter, default is the date of compilation
 \letterdate{\today}
 % The title of the letter
-\lettertitle{Job Application for Senior React Native Developer}
+\lettertitle{Job Application for Software Engineer}
 % How the letter is opened
-\letteropening{Dear Recruitment Team,}
+\letteropening{Dear Mr./Ms./Dr. LastName,}
 % How the letter is closed
 \letterclosing{Sincerely,}
 % Any enclosures with the letter
-% \letterenclosure[Attached]{Résumé}
+\letterenclosure[Attached]{Curriculum Vitae}
 
 
 %-------------------------------------------------------------------------------
 \begin{document}
 
-% Print the header with above personal informations
+% Print the header with above personal information
 % Give optional argument to change alignment(C: center, L: left, R: right)
 \makecvheader[R]
 
@@ -108,10 +108,10 @@
 % Leave any of these blank if they are not needed
 \makecvfooter
   {\today}
-  {Nicholas Nelson~~~·~~~Cover Letter}
+  {Claud D. Park~~~·~~~Cover Letter}
   {}
 
-% Print the title with above letter informations
+% Print the title with above letter information
 \makelettertitle
 
 %-------------------------------------------------------------------------------
@@ -120,22 +120,19 @@
 \begin{cvletter}
 
 \lettersection{About Me}
-I am currently a PhD candidate in Computer Science at Oregon State University, researching novel user interfaces for version control tools and software development environments. I have 6+ years experience specializing in front-end development, infrastructure automation, and technical support. I'm interested in software developer roles that can leverage my expertise in Git, CI/CD, and program analysis/transformation to support people. I believe people are the heart of any software solution, and focusing on the user is paramount for developing software that is enjoyable  to use. I've previously worked in healthcare IT, and interned at Microsoft, Intel, and Hewlett Packard Enterprise.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
 
-\lettersection{Why \company?}
-I believe software technology is disrupting the traditional barriers between personal finance and the finance industry at large. 
-The proliferation of mobile banking, cashless transactions, automated loan processing, and similar technologies is enabling the end-user to become their own financial manager. So needless to say, providing insights into how to manage debt is definitely a needed product, and Beyond Finance appears posed to tackle that area head on. I enjoy managing my own financial data, and cobbling together my own software to ingest and manage that data, but would also love to bring that attention to detail to bear at Beyond.
+\lettersection{Why Google?}
+Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
 
 \lettersection{Why Me?}
-I've spent the last 5 years developing tools for software developers using React, TypeScript, and NodeJS. These tools primarily focus on bringing the complexities of Git down to a level where novices and power-users are both capable of making informed decisions quickly in large software projects. My expertise transcends programming languages and focuses on using the correct tool for each problem, but I've spent considerable time using React Hooks, Redux state management, MUI styled-components, the ESLint static analyzer, and Jest and React Testing Library (RTL) testing frameworks. In past projects, I've also used Ruby on Rails for developing interactive web applications to display developer metrics that show conformance (or non-conformance) to the Test-Driven Development (TDD) model.
-
-I would love to further discuss how my background and skills can fit the needs of \company.
+Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
 
 \end{cvletter}
 
 
 %-------------------------------------------------------------------------------
-% Print the signature and enclosures with above letter informations
+% Print the signature and enclosures with above letter information
 \makeletterclosing
 
 \end{document}

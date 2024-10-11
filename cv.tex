@@ -23,15 +23,12 @@
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
 
-% Specify the location of the included fonts
-\fontdir[fonts/]
-
 % Color for highlights
 % Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
 %                 awesome-nephritis, awesome-concrete, awesome-darknight
-\colorlet{awesome}{awesome-red}
+\colorlet{awesome}{awesome-nephritis}
 % Uncomment if you would like to specify your own color
-% \definecolor{awesome}{HTML}{CA63A8}https://www.overleaf.com/project/63b91737b79e82eed7457750
+% \definecolor{awesome}{HTML}{CA63A8}
 
 % Colors for text
 % Uncomment if you would like to specify your own color
@@ -39,6 +36,7 @@
 % \definecolor{text}{HTML}{333333}
 % \definecolor{graytext}{HTML}{5D5D5D}
 % \definecolor{lighttext}{HTML}{999999}
+% \definecolor{sectiondivider}{HTML}{5D5D5D}
 
 % Set false if you don't want to highlight section with awesome color
 \setbool{acvSectionColorHighlight}{true}
@@ -55,35 +53,37 @@
 % \photo{./examples/profile.png}
 \name{Nicholas}{Nelson}
 \position{Software Engineer{\enskip\cdotp\enskip}HCI Researcher}
-\address{Portland, Oregon, United States of AMERICA}
+\address{Portland, Oregon, United States of America}
 
 \mobile{(+1) 541-224-6912}
-\email{nelsonni@oregonstate.edu}
+\email{nnelson8675@gmail.com}
+%\dateofbirth{January 1st, 1970}
 \homepage{https://nomatic.dev}
 \github{nelsonni}
 \linkedin{nelsonni1}
 % \gitlab{gitlab-id}
 % \stackoverflow{SO-id}{SO-name}
-\twitter{@nomaticdev}
+% \twitter{@twit}
 % \skype{skype-id}
 % \reddit{reddit-id}
-% \medium{madium-id}
+% \medium{medium-id}
+% \kaggle{kaggle-id}
+% \hackerrank{hackerrank-id}
 % \googlescholar{googlescholar-id}{name-to-display}
 %% \firstname and \lastname will be used
-\googlescholar{z7e_YQoAAAAJ&hl  }{}
-% \extrainfo{extra informations}
-
+\googlescholar{z7e_YQoAAAAJ&hl}{}
+% \extrainfo{extra information}
 % \quote{``Be the change that you want to see in the world."}
 
 %-------------------------------------------------------------------------------
 %	BIBLIOGRAPHY
 %-------------------------------------------------------------------------------
-\addbibresource{sections/references.bib}
+\addbibresource{cv/references.bib}
 
 %-------------------------------------------------------------------------------
 \begin{document}
 
-% Print the header with above personal informations
+% Print the header with above personal information
 % Give optional argument to change alignment(C: center, L: left, R: right)
 \makecvheader
 
@@ -99,15 +99,13 @@
 %	CV/RESUME CONTENT
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
-\input{sections/skills.tex}
-\input{sections/education.tex}
-\input{sections/experience.tex}
-\input{sections/publications.tex}
-\input{sections/honors.tex}
-\input{sections/teaching.tex}
-\input{sections/service.tex}
-
-
+\input{cv/education.tex}
+\input{cv/skills.tex}
+\input{cv/experience.tex}
+\input{cv/publications.tex}
+\input{cv/honors.tex}
+\input{cv/teaching.tex}
+\input{cv/service.tex}
 
 
 %-------------------------------------------------------------------------------
