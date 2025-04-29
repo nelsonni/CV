@@ -93,11 +93,15 @@
 % Solves issues Warning: File `cv.out' has changed
 \RequirePackage{bookmark}
 
+% Needed for conditional sections
+\RequirePackage{brevity}
+
+
 %-------------------------------------------------------------------------------
 %                Configuration for directory locations
 %-------------------------------------------------------------------------------
 % Configure an optional directory location for fonts(default: 'fonts/')
-% Not required anymore but left in place for backward compatability.
+% Not required anymore but left in place for backward compatibility.
 \newcommand*{\fontdir}[1][fonts/]{\def\@fontdir{#1}}
 
 %-------------------------------------------------------------------------------
